@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Sonnet 5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1B2430;
+    --paper: #F6F4EE;
+    --gold: #B98A2E;
+    --teal: #3E6B6D;
+    --line: #d9d4c7;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  header {
+    padding: 110px 0 70px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .kicker {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    color: var(--teal);
+    letter-spacing: 0.02em;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    max-width: 11ch;
+  }
+
+  h1 span {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .lede {
+    margin-top: 26px;
+    max-width: 46ch;
+    font-size: 1.15rem;
+    color: #4a4640;
+  }
+
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 32px;
+  }
+
+  .fact dt {
+    font-size: 0.9rem;
+    color: var(--teal);
+    margin-bottom: 4px;
+  }
+
+  .fact dd {
+    font-family: 'Fraunces', serif;
+    font-size: 1.25rem;
+  }
+
+  p + p { margin-top: 14px; }
+
+  footer {
+    padding: 40px 0 90px;
+    font-size: 0.9rem;
+    color: #837e73;
+  }
+
+  @media (max-width: 520px) {
+    .facts { grid-template-columns: 1fr; }
+    header { padding: 80px 0 50px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="kicker">Modellsteckbrief</div>
+      <h1>Claude<br><span>Sonnet 5</span></h1>
+      <p class="lede">Ein Sprachmodell von Anthropic — gebaut für Gespräche, Programmierung und Aufgaben, die sorgfältiges Nachdenken erfordern.</p>
+    </header>
+
+    <section>
+      <h2>Kurz gefasst</h2>
+      <div class="facts">
+        <div class="fact">
+          <dt>Hersteller</dt>
+          <dd>Anthropic</dd>
+        </div>
+        <div class="fact">
+          <dt>Modellfamilie</dt>
+          <dd>Claude</dd>
+        </div>
+        <div class="fact">
+          <dt>Generation</dt>
+          <dd>Sonnet 5</dd>
+        </div>
+        <div class="fact">
+          <dt>Zugang</dt>
+          <dd>claude.ai, API, Apps</dd>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Über diese Seite</h2>
+      <p>Diese Seite wurde als Lernbeispiel erstellt, um zu zeigen, wie eine kleine, eigenständige Website aussieht und wie sie kostenlos über GitHub Pages veröffentlicht werden kann.</p>
+      <p>Sie besteht aus einer einzigen HTML-Datei — kein Server, keine Datenbank, keine Abhängigkeiten außer einer Google-Schriftart.</p>
+    </section>
+
+    <footer>
+      Erstellt als Übungsbeispiel · index.html
+    </footer>
+  </div>
+
+</body>
+</html>
